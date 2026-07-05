@@ -1,0 +1,10 @@
+{
+  "name": "bounty-scout-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A PWA that monitors GitHub bounties, ranks them, and tracks when to submit and claim.",
+  "engines": {
+    "node": ">=18"
+  }
+}
