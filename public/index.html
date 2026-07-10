@@ -164,9 +164,9 @@ async function refresh(){
     const prevIds = new Set(bounties.map(b=>b.id));
     bounties = data.bounties||[];
     line.textContent = `${bounties.length} bounties · updated ${new Date(data.generated_at).toLocaleTimeString()}`;
-    const banner = document.getElementById("modeBanner");
+     /*const banner = document.getElementById("modeBanner");
     if(data.mode && data.mode!=="live"){
-      /*banner.style.display="block";
+     banner.style.display="block";
        banner.innerHTML = data.mode.startsWith("demo")
        ? `<b>Demo data.</b> Add a <b>GITHUB_TOKEN</b> in Vercel to see real bounties.`
         : `<b>Running without a token.</b> Add <b>GITHUB_TOKEN</b> in Vercel for reliable results.`;
