@@ -166,11 +166,11 @@ async function refresh(){
     line.textContent = `${bounties.length} bounties · updated ${new Date(data.generated_at).toLocaleTimeString()}`;
     const banner = document.getElementById("modeBanner");
     if(data.mode && data.mode!=="live"){
-      banner.style.display="block";
-       /*banner.innerHTML = data.mode.startsWith("demo")
+      /*banner.style.display="block";
+       banner.innerHTML = data.mode.startsWith("demo")
        ? `<b>Demo data.</b> Add a <b>GITHUB_TOKEN</b> in Vercel to see real bounties.`
-        : `<b>Running without a token.</b> Add <b>GITHUB_TOKEN</b> in Vercel for reliable results.`;*/
-    } else banner.style.display="none";
+        : `<b>Running without a token.</b> Add <b>GITHUB_TOKEN</b> in Vercel for reliable results.`;
+    } else banner.style.display="none";*/
     // Notify about new high-score bounties.
     const fresh = bounties.filter(b=>b.score>=70 && !prevIds.has(b.id));
     if(prevIds.size && fresh.length && Notification?.permission==="granted"){
